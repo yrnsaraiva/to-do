@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/ca8695a646.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+    <div class="content">
+        <div class="to-do">
+            <input type="text" id="newTask" placeholder="Enter a new task">
+            <button id="btnAdd">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </div>
+
+        <ul id="task-list">
+        </ul>
+    </div>
+
+    <div class="content janelaEdicao">
+        <button id="btnFechar"><i class="fa-solid fa-xmark"></i></button>
+
+        <div class="to-do">
+            <h2 id="idTarefaEdicao">#1021</h2>
+            <input type="text" id="editWindow">
+            <button id="btnSubmit" value="X">
+                <i class="fa-solid fa-floppy-disk"></i>
+            </button>
+        </div>
+    </div>
+    <div id="janelaEdicaoFundo"></div>
+
+<!--   <button class="btnAction check" value="x" data-indice=${indice}>
+                                <i class="fa-solid fa-check" data-indice=${indice}></i>
+                            </button>
+                            -->
+
+    <script src="js/sistema.js"></script>
+</body>
+</html>

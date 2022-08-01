@@ -1,0 +1,154 @@
+.content{
+    width: 100%;
+    max-width: 450px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 55px;
+    border-radius: 13px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 2px 8px rgb(0 0 0 / 5%);
+}
+.to-do{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+.to-do input{
+    font-size: 18px;
+    width: 350px;
+    padding: 15px;
+    border-radius: 12px;
+    outline: none;
+    border: 2px solid #999;
+}
+#btnAdd{
+    width: 45px;
+    background: none;
+    border: none;
+    font-size: 25px;
+    font-weight: lighter;
+    color: #999;
+    cursor: pointer;
+    outline: none;
+}
+#btnAdd:hover{
+    color: black;
+    transition: .3s ease-in;
+}
+
+
+#task-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#task-list li{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 2px 8px rgb(0 0 0 / 5%);
+    margin-bottom: 15px;
+}
+
+.task{
+    font-size: 17px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 290px;
+}
+.btnAction{
+    border: #999 solid 2px;
+    padding: 8px;
+    border-radius: 20px;
+    background: none;
+    font-weight: lighter;
+    cursor: pointer;
+    color: #999;
+    width: 38px;
+    height: 38px;
+    margin-right: 5px;
+}
+
+#btnFechar{
+    border: 1px solid #999;
+    padding: 8px;
+    border-radius: 12px;
+    background: white;
+    font-weight: lighter;
+    cursor: pointer;
+    color: #999;
+    width: 38px;
+    height: 38px;
+    margin-bottom: 5px;
+    position: absolute;
+    top: -20px;
+    right: 20px;
+}
+
+#btnSubmit{
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 8px;
+    font-size: 20px;
+}
+.hide{
+    opacity: 0 !important;
+    cursor: default;
+}
+
+input[type="checkbox"]:checked ~ span{
+    text-decoration: line-through;
+}
+
+.pencil:hover{
+    border: #000A1A solid 2px;
+    color: #000A1A;
+    transition: .8s ease;
+}
+
+.trash:hover{
+    border: darkred solid 2px;
+    color: darkred;
+    transition: .8s ease;
+}
+.check:hover{
+    border: green solid 2px;
+    color: green;
+    transition: .8s ease;
+}
+
+#janelaEdicaoFundo{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000A1A;
+    opacity: 0.9;
+    z-index: 100;
+    display: none;
+}
+
+#janelaEdicaoFundo.abrir{
+    display: block !important;
+}
+.janelaEdicao{
+    z-index: 200;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    display: none;
+}
+.janelaEdicao.abrir{
+    display: block !important;
+}
+#idTarefaEdicao{
+    display: none;
+}
+.sidebar{
+    position: fixed;
+}
